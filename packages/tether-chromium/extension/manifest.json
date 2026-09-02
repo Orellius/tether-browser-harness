@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Tether Browser Harness",
+  "version": "0.1.0",
+  "description": "Isolated Chromium adapter for Tether Browser Harness.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "nativeMessaging",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "externally_connectable": {
+    "ids": [
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    "matches": [
+      "https://deny-all.invalid/*"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Tether: no isolated profile active",
+    "default_popup": "control.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxxGUYQxPioAVrKagaJSRmxWbnY04UyK2JLPDA00OLIiX0fsl17GgRiPbFmF6OtaNkQf1f0k7XtmFfbGTwPdVdNfeKKOYAH/YLIo2aqhKLz4f7rzF1Kkn4s+TfJW51dTHYQh+TRf6zmDgdqcAlpC5B5Xp62s0D6vhbnpJZveyjmCd4vulNkVq+397EoPBW8mJ/F9Ma3oJfgs5LtmWrjsSkjj3QQCVdXEYAxMIXShTuE21y7XdFWm+j5+ewRr4MP7/7gLSov+NHO541pRN+djnVg7rob+5npRbmwztTbpmQrdtsKGKDFIY8rIJUO6OOZoxgmd4tKAA8Ds3Jb8MbFgsmQIDAQAB"
+}

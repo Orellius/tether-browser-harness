@@ -1,0 +1,13 @@
+{
+  "name": "@tether-browser/chromium",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Isolated Chromium session adapter for Tether Browser Harness.",
+  "type": "module",
+  "bin": {
+    "tether-native-host-install": "src/install-native-host.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.mjs"
+  }
+}

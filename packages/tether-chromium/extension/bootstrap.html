@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tether Session Console</title>
+  <link rel="stylesheet" href="control.css">
+  <body>
+    <main class="console bootstrap-console" aria-labelledby="console-title">
+      <header class="brand">
+        <img class="brand-mark" src="icons/icon-32.png" alt="">
+        <span class="brand-name">Tether</span>
+        <span class="brand-kind">Isolated session</span>
+      </header>
+      <section class="main">
+        <p class="eyebrow">Profile console</p>
+        <div class="status-line"><span class="signal" id="signal" data-state="offline"></span><h1 class="status" id="console-title">Preparing profile</h1></div>
+        <p class="explanation" id="description" role="status" aria-live="polite">Verifying the local isolated session.</p>
+        <div class="scope"><span class="scope-label">Scope</span><span class="scope-value" id="scope">This profile only</span></div>
+      </section>
+      <footer class="footer">Tether never adopts your ordinary browser profile</footer>
+    </main>
+    <script src="bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+:root {
+  color-scheme: dark;
+  --void: #0b0d10;
+  --surface: #14181d;
+  --line: #2b343d;
+  --ink: #f7f9fb;
+  --muted: #9aa6b2;
+  --signal: #9cff2e;
+  --warning: #ffb000;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 360px;
+  min-height: 420px;
+  margin: 0;
+  background: var(--void);
+  color: var(--ink);
+}
+
+.console {
+  display: grid;
+  min-height: 420px;
+  grid-template-rows: auto 1fr auto;
+  padding: 20px;
+  gap: 28px;
+  background-image: linear-gradient(rgba(156, 255, 46, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(156, 255, 46, .035) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.bootstrap-console { width: min(760px, calc(100vw - 48px)); min-height: 480px; margin: 48px auto; }
+
+.brand, .status-line, .scope, .footer { display: flex; align-items: center; }
+.brand { gap: 11px; }
+.brand-mark { width: 26px; height: 26px; }
+.brand-name { font-size: 14px; font-weight: 650; letter-spacing: -.02em; }
+.brand-kind, .eyebrow, .scope-label, .footer { color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.brand-kind { margin-left: auto; }
+
+.main { display: grid; align-content: center; gap: 18px; }
+.status-line { gap: 10px; }
+.signal { width: 10px; height: 10px; border-radius: 50%; background: var(--signal); box-shadow: 0 0 0 5px rgba(156, 255, 46, .12); }
+.signal[data-state="ending"] { background: var(--warning); box-shadow: 0 0 0 5px rgba(255, 176, 0, .12); }
+.signal[data-state="offline"] { background: #6e7882; box-shadow: none; }
+.status { font-size: 26px; font-weight: 650; letter-spacing: -.045em; }
+.explanation { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+
+.scope { justify-content: space-between; border: 1px solid var(--line); background: rgba(20, 24, 29, .88); padding: 14px; }
+.scope-value { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--ink); }
+
+button {
+  width: 100%; min-height: 42px; border: 1px solid #c3cfb8; background: transparent; color: var(--ink);
+  font: 600 13px/1 Inter, ui-sans-serif, system-ui, sans-serif; letter-spacing: -.01em; cursor: pointer;
+}
+button:hover { background: var(--ink); color: var(--void); }
+button:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; }
+button:disabled { cursor: wait; opacity: .55; }
+.footer { gap: 8px; }
+.footer::before { content: ""; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--signal); }

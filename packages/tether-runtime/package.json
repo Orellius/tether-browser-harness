@@ -1,0 +1,10 @@
+{
+  "name": "@tether-browser/runtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Provider-neutral runtime configuration for Tether Browser Harness.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/**/*.test.mjs"
+  }
+}

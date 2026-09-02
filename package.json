@@ -1,0 +1,15 @@
+{
+  "name": "tether-browser-harness",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Provider-neutral MCP browser harness with isolated Chromium profiles and visible operator control.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test packages/tether-core/test/*.test.mjs packages/tether-runtime/test/*.test.mjs packages/tether-mcp/test/*.test.mjs packages/tether-chromium/test/*.test.mjs",
+    "install:preview": "node scripts/install.mjs",
+    "install:apply": "node scripts/install.mjs --apply"
+  }
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tether Control</title>
+  <link rel="stylesheet" href="control.css">
+  <body>
+    <main class="console" aria-labelledby="status-title">
+      <header class="brand">
+        <img class="brand-mark" src="icons/icon-32.png" alt="">
+        <span class="brand-name">Tether</span>
+        <span class="brand-kind">Browser harness</span>
+      </header>
+      <section class="main">
+        <p class="eyebrow">Operator console</p>
+        <div class="status-line"><span class="signal" id="signal" data-state="offline"></span><h1 class="status" id="status-title">Checking profile</h1></div>
+        <p class="explanation" id="description" role="status" aria-live="polite">Reading the local Tether session state.</p>
+        <div class="scope"><span class="scope-label">Scope</span><span class="scope-value" id="scope">No profile</span></div>
+        <button id="end-session" type="button">End isolated session</button>
+      </section>
+      <footer class="footer">Operator control is local</footer>
+    </main>
+    <script src="control.js"></script>
+  </body>
+</html>
