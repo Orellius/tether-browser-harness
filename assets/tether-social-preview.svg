@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">Tether Browser Harness</title>
+  <desc id="description">Provider-neutral MCP browser control with one visible isolated Chromium session.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D0F14"/>
+      <stop offset="1" stop-color="#141824"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7C8CFF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#7C8CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#surface)"/>
+  <circle cx="1010" cy="312" r="410" fill="url(#glow)"/>
+
+  <g fill="none" stroke="#7C8CFF" opacity=".13">
+    <circle cx="1010" cy="312" r="242" stroke-width="2"/>
+    <circle cx="1010" cy="312" r="188" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(872 174) scale(2.16)">
+    <rect x="4" y="4" width="120" height="120" rx="34" fill="#0D0F14" stroke="#313A52" stroke-width="2"/>
+    <path d="M27 38h22l12 12v28L49 90H27" fill="none" stroke="#F4F6FA" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M101 38H79L67 50v28l12 12h22" fill="none" stroke="#F4F6FA" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M48 64h32" fill="none" stroke="#7C8CFF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="64" cy="64" r="16" fill="#7C8CFF"/>
+    <path d="M64 47v34" fill="none" stroke="#0D0F14" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Arial, sans-serif">
+    <text x="92" y="139" fill="#A9B5FF" font-size="22" font-weight="700" letter-spacing="4">OPEN SOURCE · APACHE-2.0</text>
+    <text x="92" y="267" fill="#F4F6FA" font-size="88" font-weight="750" letter-spacing="-4">Tether</text>
+    <text x="96" y="320" fill="#AEB8CB" font-size="27" font-weight="600" letter-spacing="1.2">BROWSER HARNESS</text>
+    <text x="92" y="411" fill="#F4F6FA" font-size="31" font-weight="500">Provider-neutral MCP control for one</text>
+    <text x="92" y="455" fill="#F4F6FA" font-size="31" font-weight="500">visible, isolated Chromium session.</text>
+    <text x="92" y="554" fill="#AEB8CB" font-size="21" font-weight="600">EXPLICIT SESSION END  ·  LOCAL EVIDENCE TRAILS</text>
+  </g>
+</svg>
