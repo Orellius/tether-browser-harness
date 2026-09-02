@@ -9,7 +9,7 @@ async function setOperatorIndicator(state) {
   const ending = state === "ending";
   await Promise.all([
     chrome.action.setBadgeText({ text: active ? "LIVE" : ending ? "END" : "" }),
-    chrome.action.setBadgeBackgroundColor({ color: active ? "#9CFF2E" : ending ? "#FFB000" : "#6E7882" }),
+    chrome.action.setBadgeBackgroundColor({ color: active ? "#7C8CFF" : ending ? "#EC6C5D" : "#6E7882" }),
     chrome.action.setTitle({ title: active
       ? "Tether: active isolated profile"
       : ending ? "Tether: ending isolated profile"

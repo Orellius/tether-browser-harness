@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Tether Browser Harness">
-  <rect width="128" height="128" rx="28" fill="#0B0D10"/>
-  <path d="M28 35h72M64 35v49" fill="none" stroke="#F7F9FB" stroke-linecap="square" stroke-width="12"/>
-  <path d="M44 92h40" fill="none" stroke="#34404A" stroke-width="10"/>
-  <circle cx="64" cy="92" r="13" fill="#9CFF2E"/>
-  <circle cx="64" cy="92" r="5" fill="#0B0D10"/>
+  <rect x="4" y="4" width="120" height="120" rx="34" fill="#0D0F14"/>
+  <path d="M27 38h22l12 12v28L49 90H27" fill="none" stroke="#F4F6FA" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M101 38H79L67 50v28l12 12h22" fill="none" stroke="#F4F6FA" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48 64h32" fill="none" stroke="#7C8CFF" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="64" cy="64" r="16" fill="#7C8CFF"/>
+  <path d="M64 47v34" fill="none" stroke="#0D0F14" stroke-width="8" stroke-linecap="round"/>
 </svg>

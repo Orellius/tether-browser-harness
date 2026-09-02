@@ -54,7 +54,7 @@ test("an active profile exposes a persistent operator indicator and a user-owned
   h.listeners[0]({ type: "tether_profile_bootstrap", token: "a".repeat(64) }, { id: "tether-test-extension" }, (value) => replies.push(value));
   await tick();
   assert.deepEqual(clone(h.action.badges.at(-1)), { text: "LIVE" });
-  assert.deepEqual(clone(h.action.colors.at(-1)), { color: "#9CFF2E" });
+  assert.deepEqual(clone(h.action.colors.at(-1)), { color: "#7C8CFF" });
   assert.match(h.action.titles.at(-1).title, /active isolated profile/i);
 
   h.port.messageListeners[0]({ type: "tool_request", id: "create", tool: "tabs_create", args: {} });

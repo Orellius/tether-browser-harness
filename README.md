@@ -11,7 +11,7 @@ private project and is being released as open-source software.
 ## What the operator sees
 
 Every live Tether session opens a dedicated browser profile with a persistent
-Session Console tab. The extension action changes to a green `LIVE` badge and
+Session Console tab. The extension action changes to a blue-violet `LIVE` badge and
 its popup identifies the active isolated profile and offers **End isolated
 session**. The button closes only Tether-owned tabs and asks the local bridge to
 stop the exact browser process it started.

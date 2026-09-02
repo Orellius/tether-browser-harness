@@ -13,7 +13,7 @@
   chrome.runtime.sendMessage({ type: "tether_profile_bootstrap", token }, (result) => {
     if (result?.ok) {
       if (title) title.textContent = "Profile live";
-      if (description) description.textContent = "Tether is ready. The toolbar badge remains LIVE while this isolated profile is active.";
+      if (description) description.textContent = "This boundary is live. The toolbar badge remains LIVE while this isolated profile is active.";
       if (signal) signal.dataset.state = "active";
     }
   });
