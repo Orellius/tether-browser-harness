@@ -1,5 +1,10 @@
 # Tether Browser Harness
 
+[![CI](https://github.com/Orellius/tether-browser-harness/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/Orellius/tether-browser-harness/actions/workflows/test.yml)
+[![Release](https://img.shields.io/github/v/release/Orellius/tether-browser-harness?display_name=tag&label=release)](https://github.com/Orellius/tether-browser-harness/releases)
+[![Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-7C8CFF)](LICENSE)
+[![MCP](https://img.shields.io/badge/MCP-provider--neutral-0D0F14)](https://modelcontextprotocol.io/)
+
 **A local, provider-neutral MCP bridge for one visible, isolated Chromium session.**
 
 Tether gives any MCP-capable client a narrow browser-control surface without
@@ -7,6 +12,8 @@ adopting the user's everyday browser, tabs, cookies, or profile. It began as a
 private project and is being released as open-source software.
 
 <img src="packages/tether-chromium/extension/icons/tether-mark.svg" width="112" alt="Tether extension mark">
+
+<img src="assets/tether-social-preview.png" width="640" alt="Tether Browser Harness social preview">
 
 ## What the operator sees
 
