@@ -6,7 +6,7 @@ Tether gives any MCP-capable client a narrow browser-control surface without
 adopting the user's everyday browser, tabs, cookies, or profile. It began as a
 private project and is being released as open-source software.
 
-![Tether extension mark](packages/tether-chromium/extension/icons/tether-mark.svg)
+<img src="packages/tether-chromium/extension/icons/tether-mark.svg" width="112" alt="Tether extension mark">
 
 ## What the operator sees
 
